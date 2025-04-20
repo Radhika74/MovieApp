@@ -1,0 +1,113 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.app-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.app-container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #3498db;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.error {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.movie-info {
+  margin-top: 2rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.movie-info h2 {
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+.movie-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.poster {
+  margin-top: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(33, 147, 176, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
