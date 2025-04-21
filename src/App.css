@@ -34,7 +34,7 @@ body {
 }
 
 .input {
-  width: 100%;
+  width: 80%;
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
@@ -51,14 +51,14 @@ body {
 }
 
 .button {
-  width: 100%;
+  width: 25%;
   padding: 0.75rem;
   background: linear-gradient(to right, #6dd5ed, #2193b0);
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   opacity: 0.95;
   transition: opacity 0.3s ease, transform 0.2s ease;

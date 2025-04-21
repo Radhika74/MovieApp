@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 const App = () => {
-const [query, setQuery] = useState(''); // Store the search query
-const [movie, setMovie] = useState(null); // Store the fetched movie data
-const [error, setError] = useState(''); // Store error message
-// Fetch movie data from OMDB API
+const [query, setQuery] = useState('');
+const [movie, setMovie] = useState(null);
+const [error, setError] = useState('');
+
 const fetchMovie = async () => {
 try {
 // Make API request with the movie title entered by the user
@@ -16,7 +16,7 @@ setError('Movie not found');
 setMovie(null);
 } else {
 setMovie(data); // Set movie data to state
-setError(''); // Clear error message
+setError('');
 }
 } catch (err) {
 setError('Error fetching data');
